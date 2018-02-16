@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+ 	int n,a,sum=0;
+ 	scanf("%d",&n);
+ 	for(a=1;a<=100;a++){
+ 		if(n%a==0 && n!=a ){
+ 		
+ 			printf("%d ",a);
+ 			sum=sum+a;
+ 		}
+ 			
+ 	}
+ 	printf("\n%d\n",sum);
+ 	if(n==sum){
+ 		printf("%d is a perfect number\n",n);
+	}
+	else{
+		printf("%d is not perfect\n",n);
+	}	
+ 	return 0;
+} 	
